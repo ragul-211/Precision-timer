@@ -1,0 +1,112 @@
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgb(255, 255, 255);
+    border-radius:3em;
+    box-sizing:border-box;
+    left:30%;
+    padding:3vmin;
+    position:fixed;
+    text-align:center;
+    top:40%;
+    transform:translate(-50%, -50%);
+    color:  #00c0ff;
+    border: 2px solid  #00c0ff;
+  }
+  
+  h1 {
+    font-family:monospace;
+    top: 45%;
+    font-size: 50px;
+  }
+
+  p{
+    color: white;
+    position: absolute;
+    top: 150%;
+    left: 10%;
+    font-size: 20px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+  @media (max-width: 400px) {
+    .content {
+      top:15%;
+      left: 200px;
+      width: 80%;
+    }
+    h1 {
+      top: 45%;
+      font-size: 30px;
+    }
+    p{
+      left:0px;
+    }
+}
+@media (min-width: 401px)and (max-width: 500px){
+  .content {
+    top:20%;
+    left: 200px;
+    width: 80%;
+    align-items: center;
+  }
+  h1 {
+    top: 45%;
+    font-size: 30px;
+  }
+  p{
+    left:0px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1220px) {
+  .content {
+    top:25%;
+    left: 490px;
+    width: 60%;
+    align-items: center;
+  }
+  h1 {
+    top: 45%;
+    font-size: 50px;
+  }
+  p{
+    left:0px;
+    font-size:40px;
+    align-items: center;
+  }
+}

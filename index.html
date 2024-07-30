@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STOPWATCH</title>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+  <h1>STOPWATCH TIMER</h1>
+<p><i><b>"We must use time as a tool, not as a Couch"<br><br>- John F. Kennedy</b></i> </p></div>
+<div class="container">
+    <div class="timer-Display">
+        00 : 00 : 00 : 00
+    </div>
+    <ul class="laps"></ul>
+      <div class="buttons">
+        <button id="startTimer" onclick="start()">Start</button>
+        <button id="pauseTimer" onclick="pause()">Pause</button>
+        <button id="resetTime" onclick="reset()">Reset</button>
+        <button id="restartTimer" onclick="restart()">Restart</button>
+        <button id="lap" onclick="lap()">Lap</button>
+        <button id="resetLap" onclick="resetLap()">Reset Laps</button>
+    </div>
+
+</div>
+<script src="./script.js"></script>
+
+</body>
+</html>
